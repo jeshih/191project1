@@ -1,7 +1,16 @@
 #!/bin/bash
 
-if [ $# == 2 ]
-    then
+validass=$(grep -c $2 grader.csv)
+validstu=$(grep -c $1 grader.csv)
+
+if [ $validstu -ne 1 ]
+then
+    echo "STUDENT NOT IN SYSTEM"
+elif [ $validass -ne 1 ]
+then
+    echo "ASSIGNMENT NOT IN SYSTEM"
+elif [ $# == 2 ]
+then
     echo "Enter student score for assignment: "
     read input_variable
     student=$(grep -n $1 grader.csv | cut -f1 -d:)
@@ -17,8 +26,8 @@ if [ $# == 2 ]
 	    break
 	fi
     done
-    sed -i ''$student's/[^ ]*/'$input_variable'/'$count'' grader.csv
     unset IFS
+    sed -i ''$student's/[^ ]*/'$input_variable'/'$count'' grader.csv
  else
     echo "Invalid Input!!"
 fi

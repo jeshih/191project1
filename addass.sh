@@ -1,6 +1,11 @@
 #!/bin/bash
 
-if [ $# == 1 ]
+ass=$(grep -c $1 grader.csv)
+
+if [ $ass -ne 0 ]
+then
+    echo "ASSIGNMENT ALREADY IN SYSTEM"
+elif [ $# -eq 1 ]
 then
     sed -i '1 s/$/, '$1'/'  grader.csv
 

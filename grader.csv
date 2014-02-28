@@ -1,4 +1,5 @@
-PENNKEY, LAST_NAME, FIRST_NAME, hw1, hw2, proj1, proj2
-PENNKEY, LAST_NAME, FIRST_NAME, 10, 10, 50, 50
-jeshih, shih, jeff, 0, 0, 0, 0
-apearce, pearce, allison, 0, 0, 0, 0
+PENNKEY, LAST_NAME, FIRST_NAME, hw1, hw2, midterm1, proj1
+PENNKEY, LAST_NAME, FIRST_NAME, 10, 10, 100, 50
+jeshih, shih, jeff, 9, 9, 99, 10,
+apearce, pearce, allison, 10, 10, 0, 0
+claurent, laurent, charles, 0, 0, 0, 0

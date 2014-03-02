@@ -6,7 +6,7 @@ if [ $# -eq 1 ]
 then
     pennkey=$1
     
-    num=$(grep -c $pennkey grader_test.csv)
+    num=$(grep -c $pennkey grader.csv)
     if [ $num -eq 0 ]
     then 
 	echo "STUDENT NOT IN SYSTEM"
@@ -15,8 +15,8 @@ then
 	read input_variable
 	if [ $input_variable = y ]
 	then
-	    line_num=$(grep -n $pennkey grader_test.csv | cut -d':' -f1)
-	    sed -i "$line_num"d grader_test.csv
+	    line_num=$(grep -n $pennkey grader.csv | cut -d':' -f1)
+	    sed -i "$line_num"d grader.csv
 	fi
 
     fi

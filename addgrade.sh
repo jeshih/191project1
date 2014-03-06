@@ -29,7 +29,7 @@ then
 	    break
 	fi
     done
-    sed -i ''$student's/[^,]*/'$input_variable'/'$count'' grader.csv
+    sed -i ''$student's/[^,]*/ '$input_variable'/'$count'' grader.csv
  else
     echo "Invalid Input!!"
 fi

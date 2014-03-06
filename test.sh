@@ -1,5 +1,7 @@
 #!/bin/bash
+ 
+students=$(cut -d ',' -f 1 grader.csv)
 
-IFS=', '
-sed -e '3s/[^ ]*/TEST/4' grader.csv
-unset IFS
+read -a stu <<< $students
+
+echo  ${stu[3]}

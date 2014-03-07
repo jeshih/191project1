@@ -12,6 +12,6 @@ else
     #generate grade files
     bash generategradefiles.sh $2
     echo "email student $1 for $2 assignment"
-    #mail -a $2/$1_$2_grade $1@seas.upenn.edu
+    mail -a $2/$1_$2_grade $1@seas.upenn.edu
 
 fi

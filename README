@@ -1,0 +1,86 @@
+CIS 191- Spring 2014
+Team Members:
+Jeff Shih and Charles Laurent
+
+The file name used for the "database" must be grader.csv
+________________
+Adding a student
+
+What to run:
+bash addstudent.sh pennkey lastname firstname
+
+________________
+Removing a student
+
+What to run:
+bash remstudent.sh pennkey
+(NOTE: confirmation will be required. Press Y for yes and then enter
+
+________________
+Adding an assignment
+
+What to run
+bash addass.sh assignmentname
+You will be prompted to enter max score. Then press enter
+
+_________________
+Add student grade
+
+What to run
+bash addgrade.sh pennkey assignmentname
+You will be prompted to enter the score. Then press enter
+
+__________________
+Get student grade
+
+What to run
+bash getgrade.sh pennkey
+
+_________________
+Get all student grade
+
+What to run
+bash getallgrades.sh CSVpath
+In this case, CSVpath is grader.csv
+
+_________________
+Generate grade file for 1 student
+
+What to run
+bash getstudentfile.sh pennkey assignmentname
+
+_________________
+Generate grade file for all students
+
+What to run
+bash generategradefiles.sh assignmentname
+
+_________________
+Send grade via email to 1 student
+
+What to run
+bash emailstudent.sh pennkey assignmentname
+
+_________________
+Send grade via email to all students
+
+What to run
+bash emailallstudents.sh assignmentname
+
+________________
+Archiver
+
+What to run
+bash archiver.sh semester year
+NOTE: semester is spring, fall or summer
+      year is YYYY
+      emailstudent.sh and emailallstudent.sh must be run first!
+
+__________________
+
+EXTRA CREDIT!
+
+What to run
+
+bash mean.sh assignmentname
+NOTE: calculates assignment mean (average)

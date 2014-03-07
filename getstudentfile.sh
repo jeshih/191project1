@@ -19,12 +19,12 @@ else
     read -a line2 <<< "$sline"
     read -a linestu <<< "$stuline"
     # size=$(echo ${#line1[@]})
-    echo "${linestu[2]} ${linestu[1]} (${linestu[0]})" > "${linestu[0]}_$2_assignment"
+    echo "${linestu[2]} ${linestu[1]} (${linestu[0]})" > "${linestu[0]}_$2_grade"
     count=3
     while [ $2 != ${line1[$count]} ]; do
 	let count=count+1
     done
-    echo "${line1[$count]}" >> "${linestu[0]}_$2_assignment"
-    echo "Grade: ${linestu[$count]}/${line2[$count]}" >> "${linestu[0]}_$2_assignment"
+    echo "${line1[$count]}" >> "${linestu[0]}_$2_grade"
+    echo "Grade: ${linestu[$count]}/${line2[$count]}" >> "${linestu[0]}_$2_grade"
 
 fi
